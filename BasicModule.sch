@@ -1,0 +1,493 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:74xgxx
+LIBS:5050_ws2811
+LIBS:a4988-module
+LIBS:ac-dc
+LIBS:acs712
+LIBS:actel
+LIBS:adxl345
+LIBS:allegro
+LIBS:Altera
+LIBS:AMS1117
+LIBS:analog_devices
+LIBS:ant
+LIBS:at24c64
+LIBS:battery_management
+LIBS:bbd
+LIBS:bc56-12EWA
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cp2103
+LIBS:CP2102
+LIBS:dc-dc
+LIBS:dht11
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:esp8266-module
+LIBS:ESP32
+LIBS:fe
+LIBS:ftdi
+LIBS:Gajda_opto
+LIBS:gennum
+LIBS:graphic
+LIBS:GS6300
+LIBS:gy-a4988_module
+LIBS:hc11
+LIBS:hc541
+LIBS:hc-05
+LIBS:HC164
+LIBS:hlk-rm04
+LIBS:ir
+LIBS:irf7907
+LIBS:isp_6p
+LIBS:l298n
+LIBS:Lattice
+LIBS:LM2575
+LIBS:logo
+LIBS:logo-azura-wrench
+LIBS:M25P05
+LIBS:max1538
+LIBS:maxim
+LIBS:mcp1640
+LIBS:mcp1640b
+LIBS:MCP3208
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:miniusb
+LIBS:motor_drivers
+LIBS:motors
+LIBS:mp2109dq
+LIBS:MP2307DN
+LIBS:msp430
+LIBS:na10-psu
+LIBS:nordicsemi
+LIBS:nrf24l01
+LIBS:nxp_armmcu
+LIBS:OF5032
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:pl2303
+LIBS:pogopin
+LIBS:powerint
+LIBS:powerjack
+LIBS:Power_Management
+LIBS:pspice
+LIBS:pt4115
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:RJ45-ENCODER
+LIBS:rtl8196
+LIBS:sensors
+LIBS:silabs
+LIBS:smd oscillator
+LIBS:songle_relay
+LIBS:spiflash_16m
+LIBS:st1s10
+LIBS:stc12c5a60s2
+LIBS:stepper_drivers
+LIBS:stm8
+LIBS:stm32
+LIBS:STM32F100RBT6B
+LIBS:stpdn
+LIBS:supertex
+LIBS:switches
+LIBS:tcs3200d
+LIBS:tda5144
+LIBS:test
+LIBS:texas-msp
+LIBS:tp4056
+LIBS:transf
+LIBS:ts812c
+LIBS:ttl_ieee
+LIBS:usb_a
+LIBS:usb-a-pcb
+LIBS:usb_ax2
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:ws2812
+LIBS:xc3s100etq144
+LIBS:xc3s500evq100
+LIBS:xc6slx9-tqg144
+LIBS:XC9572-TQ100
+LIBS:Xicor
+LIBS:xilinx_spartan3_virtex4_and_5
+LIBS:zetex
+LIBS:Zilog
+LIBS:рэс-49
+LIBS:тпг-1
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L POT RV1
+U 1 1 5907698A
+P 4400 4500
+F 0 "RV1" V 4225 4500 50  0000 C CNN
+F 1 "POT" V 4300 4500 50  0000 C CNN
+F 2 "" H 4400 4500 50  0001 C CNN
+F 3 "" H 4400 4500 50  0001 C CNN
+	1    4400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Buzzer BZ1
+U 1 1 590769E6
+P 5050 4300
+F 0 "BZ1" H 5200 4350 50  0000 L CNN
+F 1 "Buzzer" H 5200 4250 50  0000 L CNN
+F 2 "" V 5025 4400 50  0001 C CNN
+F 3 "" V 5025 4400 50  0001 C CNN
+	1    5050 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D1
+U 1 1 59076A41
+P 5500 4300
+F 0 "D1" H 5500 4400 50  0000 C CNN
+F 1 "LED" H 5500 4200 50  0000 C CNN
+F 2 "" H 5500 4300 50  0001 C CNN
+F 3 "" H 5500 4300 50  0001 C CNN
+	1    5500 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_NPN_BCE Q1
+U 1 1 59076A68
+P 6950 4750
+F 0 "Q1" H 7150 4800 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 7150 4700 50  0000 L CNN
+F 2 "" H 7150 4850 50  0001 C CNN
+F 3 "" H 6950 4750 50  0001 C CNN
+	1    6950 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_Push_Dual SW1
+U 1 1 59076B2E
+P 6050 4250
+F 0 "SW1" H 6100 4350 50  0000 L CNN
+F 1 "SW_Push_Dual" H 6050 3980 50  0000 C CNN
+F 2 "" H 6050 4450 50  0001 C CNN
+F 3 "" H 6050 4450 50  0001 C CNN
+	1    6050 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 59076B87
+P 5350 3800
+F 0 "R1" V 5430 3800 50  0000 C CNN
+F 1 "R" V 5350 3800 50  0000 C CNN
+F 2 "" V 5280 3800 50  0001 C CNN
+F 3 "" H 5350 3800 50  0001 C CNN
+	1    5350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 59076BA8
+P 7850 4650
+F 0 "P1" H 7850 4850 50  0000 C CNN
+F 1 "CONN_01X03" V 7950 4650 50  0000 C CNN
+F 2 "" H 7850 4650 50  0001 C CNN
+F 3 "" H 7850 4650 50  0001 C CNN
+	1    7850 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 59076D5D
+P 4400 4850
+F 0 "#PWR01" H 4400 4600 50  0001 C CNN
+F 1 "GND" H 4400 4700 50  0000 C CNN
+F 2 "" H 4400 4850 50  0001 C CNN
+F 3 "" H 4400 4850 50  0001 C CNN
+	1    4400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4850 4400 4650
+$Comp
+L +5V #PWR02
+U 1 1 5907709F
+P 5050 3350
+F 0 "#PWR02" H 5050 3200 50  0001 C CNN
+F 1 "+5V" H 5050 3490 50  0000 C CNN
+F 2 "" H 5050 3350 50  0001 C CNN
+F 3 "" H 5050 3350 50  0001 C CNN
+	1    5050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4350 4400 3550
+Wire Wire Line
+	4400 3550 5350 3550
+Wire Wire Line
+	5050 3550 5050 3350
+Wire Wire Line
+	5200 4500 5200 4400
+Wire Wire Line
+	5200 4400 5150 4400
+Wire Wire Line
+	5150 4200 5200 4200
+Connection ~ 5050 3550
+Wire Wire Line
+	5500 4450 5500 4600
+Connection ~ 5200 4500
+Wire Wire Line
+	5200 4200 5200 4100
+Wire Wire Line
+	5200 4100 5500 4100
+Wire Wire Line
+	5350 3950 5350 4100
+Wire Wire Line
+	5500 4000 5500 4150
+Connection ~ 5350 4100
+Wire Wire Line
+	5850 4500 5850 4450
+Connection ~ 5500 4500
+Wire Wire Line
+	6050 4500 6050 4450
+Connection ~ 5850 4500
+Wire Wire Line
+	5850 4050 6050 4050
+Wire Wire Line
+	5950 4050 5950 4000
+Wire Wire Line
+	5500 4000 6550 4000
+Connection ~ 5500 4100
+Connection ~ 5950 4050
+$Comp
+L R R3
+U 1 1 5907747E
+P 6550 4250
+F 0 "R3" V 6630 4250 50  0000 C CNN
+F 1 "R" V 6550 4250 50  0000 C CNN
+F 2 "" V 6480 4250 50  0001 C CNN
+F 3 "" H 6550 4250 50  0001 C CNN
+	1    6550 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3550 5350 3650
+Connection ~ 5950 4000
+Connection ~ 6050 4500
+$Comp
+L R R2
+U 1 1 59077639
+P 6350 4500
+F 0 "R2" V 6430 4500 50  0000 C CNN
+F 1 "R" V 6350 4500 50  0000 C CNN
+F 2 "" V 6280 4500 50  0001 C CNN
+F 3 "" H 6350 4500 50  0001 C CNN
+	1    6350 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 4500 6200 4500
+Wire Wire Line
+	6500 4500 6850 4500
+Wire Wire Line
+	6550 4500 6550 4400
+Wire Wire Line
+	6550 4000 6550 4100
+$Comp
+L C C1
+U 1 1 59077A41
+P 5500 4750
+F 0 "C1" H 5525 4850 50  0000 L CNN
+F 1 "C" H 5525 4650 50  0000 L CNN
+F 2 "" H 5538 4600 50  0001 C CNN
+F 3 "" H 5500 4750 50  0001 C CNN
+	1    5500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59077ADF
+P 5500 4950
+F 0 "#PWR03" H 5500 4700 50  0001 C CNN
+F 1 "GND" H 5500 4800 50  0000 C CNN
+F 2 "" H 5500 4950 50  0001 C CNN
+F 3 "" H 5500 4950 50  0001 C CNN
+	1    5500 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4900 5500 4950
+$Comp
+L R R5
+U 1 1 59077CD8
+P 7350 4750
+F 0 "R5" V 7430 4750 50  0000 C CNN
+F 1 "R" V 7350 4750 50  0000 C CNN
+F 2 "" V 7280 4750 50  0001 C CNN
+F 3 "" H 7350 4750 50  0001 C CNN
+	1    7350 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 4750 7200 4750
+Wire Wire Line
+	6850 4400 6850 4550
+Connection ~ 6550 4500
+$Comp
+L R R4
+U 1 1 59077DA8
+P 7150 4550
+F 0 "R4" V 7230 4550 50  0000 C CNN
+F 1 "R" V 7150 4550 50  0000 C CNN
+F 2 "" V 7080 4550 50  0001 C CNN
+F 3 "" H 7150 4550 50  0001 C CNN
+	1    7150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4750 7150 4700
+Wire Wire Line
+	7150 4400 6850 4400
+Connection ~ 6850 4500
+$Comp
+L GND #PWR04
+U 1 1 59077F3F
+P 6850 5000
+F 0 "#PWR04" H 6850 4750 50  0001 C CNN
+F 1 "GND" H 6850 4850 50  0000 C CNN
+F 2 "" H 6850 5000 50  0001 C CNN
+F 3 "" H 6850 5000 50  0001 C CNN
+	1    6850 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4950 6850 5000
+Wire Wire Line
+	7500 4750 7650 4750
+$Comp
+L +5V #PWR05
+U 1 1 59078247
+P 7550 4450
+F 0 "#PWR05" H 7550 4300 50  0001 C CNN
+F 1 "+5V" H 7550 4590 50  0000 C CNN
+F 2 "" H 7550 4450 50  0001 C CNN
+F 3 "" H 7550 4450 50  0001 C CNN
+	1    7550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4650 7550 4650
+Wire Wire Line
+	7550 4650 7550 4450
+$Comp
+L GND #PWR06
+U 1 1 59078352
+P 7600 5000
+F 0 "#PWR06" H 7600 4750 50  0001 C CNN
+F 1 "GND" H 7600 4850 50  0000 C CNN
+F 2 "" H 7600 5000 50  0001 C CNN
+F 3 "" H 7600 5000 50  0001 C CNN
+	1    7600 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4550 7600 4550
+Wire Wire Line
+	7600 4550 7600 5000
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 590785A3
+P 6550 7050
+F 0 "#FLG07" H 6550 7125 50  0001 C CNN
+F 1 "PWR_FLAG" H 6550 7200 50  0000 C CNN
+F 2 "" H 6550 7050 50  0001 C CNN
+F 3 "" H 6550 7050 50  0001 C CNN
+	1    6550 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 590786A5
+P 6550 7200
+F 0 "#PWR08" H 6550 6950 50  0001 C CNN
+F 1 "GND" H 6550 7050 50  0000 C CNN
+F 2 "" H 6550 7200 50  0001 C CNN
+F 3 "" H 6550 7200 50  0001 C CNN
+	1    6550 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 7050 6550 7200
+$Comp
+L +5V #PWR09
+U 1 1 59078AD8
+P 6200 7050
+F 0 "#PWR09" H 6200 6900 50  0001 C CNN
+F 1 "+5V" H 6200 7190 50  0000 C CNN
+F 2 "" H 6200 7050 50  0001 C CNN
+F 3 "" H 6200 7050 50  0001 C CNN
+	1    6200 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 59078BDF
+P 6200 7250
+F 0 "#FLG010" H 6200 7325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6200 7400 50  0000 C CNN
+F 2 "" H 6200 7250 50  0001 C CNN
+F 3 "" H 6200 7250 50  0001 C CNN
+	1    6200 7250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 7050 6200 7250
+$EndSCHEMATC
