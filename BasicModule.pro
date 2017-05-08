@@ -1,4 +1,4 @@
-update=lun 08 may 2017 15:15:14 CEST
+update=lun 08 may 2017 18:53:40 CEST
 version=1
 last_client=kicad
 [general]
@@ -195,3 +195,4 @@ LibName151=zetex
 LibName152=Zilog
 LibName153=рэс-49
 LibName154=тпг-1
+LibName155=/home/david/Escritorio/Electronics/kicad_simbolos/SparkFun-LED
