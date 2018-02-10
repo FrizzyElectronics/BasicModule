@@ -1,158 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:74xgxx
-LIBS:5050_ws2811
-LIBS:a4988-module
-LIBS:ac-dc
-LIBS:acs712
-LIBS:actel
-LIBS:adxl345
-LIBS:allegro
-LIBS:Altera
-LIBS:AMS1117
-LIBS:analog_devices
-LIBS:ant
-LIBS:at24c64
-LIBS:battery_management
-LIBS:bbd
-LIBS:bc56-12EWA
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cp2103
-LIBS:CP2102
-LIBS:dc-dc
-LIBS:dht11
-LIBS:diode
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:esp8266-module
-LIBS:ESP32
-LIBS:fe
-LIBS:ftdi
-LIBS:Gajda_opto
-LIBS:gennum
-LIBS:graphic
-LIBS:GS6300
-LIBS:gy-a4988_module
-LIBS:hc11
-LIBS:hc541
-LIBS:hc-05
-LIBS:HC164
-LIBS:hlk-rm04
-LIBS:ir
-LIBS:irf7907
-LIBS:isp_6p
-LIBS:l298n
-LIBS:Lattice
-LIBS:LM2575
-LIBS:logo
-LIBS:logo-azura-wrench
-LIBS:M25P05
-LIBS:max1538
-LIBS:maxim
-LIBS:mcp1640
-LIBS:mcp1640b
-LIBS:MCP3208
-LIBS:mechanical
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:miniusb
-LIBS:motor_drivers
-LIBS:motors
-LIBS:mp2109dq
-LIBS:MP2307DN
-LIBS:msp430
-LIBS:na10-psu
-LIBS:nordicsemi
-LIBS:nrf24l01
-LIBS:nxp_armmcu
-LIBS:OF5032
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:pl2303
-LIBS:pogopin
-LIBS:powerint
-LIBS:powerjack
-LIBS:Power_Management
-LIBS:pspice
-LIBS:pt4115
-LIBS:references
-LIBS:relays
-LIBS:rfcom
-LIBS:RJ45-ENCODER
-LIBS:rtl8196
-LIBS:sensors
-LIBS:silabs
-LIBS:smd oscillator
-LIBS:songle_relay
-LIBS:spiflash_16m
-LIBS:st1s10
-LIBS:stc12c5a60s2
-LIBS:stepper_drivers
-LIBS:stm8
-LIBS:stm32
-LIBS:STM32F100RBT6B
-LIBS:stpdn
-LIBS:supertex
-LIBS:switches
-LIBS:tcs3200d
-LIBS:tda5144
-LIBS:test
-LIBS:texas-msp
-LIBS:tp4056
-LIBS:transf
-LIBS:ts812c
-LIBS:ttl_ieee
-LIBS:usb_a
-LIBS:usb-a-pcb
-LIBS:usb_ax2
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:ws2812
-LIBS:xc3s100etq144
-LIBS:xc3s500evq100
-LIBS:xc6slx9-tqg144
-LIBS:XC9572-TQ100
-LIBS:Xicor
-LIBS:xilinx_spartan3_virtex4_and_5
-LIBS:zetex
-LIBS:Zilog
-LIBS:рэс-49
-LIBS:тпг-1
 LIBS:SparkFun-LED
 LIBS:BasicModule-cache
 EELAYER 25 0
@@ -283,18 +129,14 @@ Wire Wire Line
 $Comp
 L GND #PWR04
 U 1 1 59078352
-P 7550 5050
-F 0 "#PWR04" H 7550 4800 50  0001 C CNN
-F 1 "GND" H 7550 4900 50  0000 C CNN
-F 2 "" H 7550 5050 50  0001 C CNN
-F 3 "" H 7550 5050 50  0001 C CNN
-	1    7550 5050
+P 7550 4900
+F 0 "#PWR04" H 7550 4650 50  0001 C CNN
+F 1 "GND" H 7550 4750 50  0000 C CNN
+F 2 "" H 7550 4900 50  0001 C CNN
+F 3 "" H 7550 4900 50  0001 C CNN
+	1    7550 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7600 4600 7550 4600
-Wire Wire Line
-	7550 4600 7550 5050
 $Comp
 L PWR_FLAG #FLG05
 U 1 1 590785A3
@@ -363,9 +205,7 @@ Wire Wire Line
 	6100 4800 6350 4800
 Text GLabel 6350 4800 2    60   Input ~ 0
 SIGNAL
-Wire Wire Line
-	7600 4800 7250 4800
-Text GLabel 7250 4800 0    60   Input ~ 0
+Text GLabel 7350 4600 0    60   Input ~ 0
 SIGNAL
 $Comp
 L +5V #PWR09
@@ -433,4 +273,10 @@ Connection ~ 5500 4500
 Wire Wire Line
 	6650 4500 6650 4250
 Connection ~ 5750 4500
+Wire Wire Line
+	7350 4600 7600 4600
+Wire Wire Line
+	7600 4800 7550 4800
+Wire Wire Line
+	7550 4800 7550 4900
 $EndSCHEMATC
