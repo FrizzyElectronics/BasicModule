@@ -5,4 +5,5 @@
   (lib (name ab2_input_devices)(type KiCad)(uri /home/david/Escritorio/Electronics/kicad_componentes/ab2_input_devices.pretty)(options "")(descr ""))
   (lib (name BasicModule)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
   (lib (name Grape)(type KiCad)(uri /home/david/Escritorio/Github/Grape/Hardware/KiCad/Grape)(options "")(descr ""))
+  (lib (name lib_fp)(type KiCad)(uri "$(KIPRJMOD)/lib_fp.pretty")(options "")(descr ""))
 )
